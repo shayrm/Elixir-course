@@ -14,6 +14,8 @@ defmodule CardsTest do
   test "suffeling a deck randomizes it" do
     deck = Cards.create_deck
     assert deck != Cards.shuffle(deck)
+    # it is possible to write the same with refute
+    # refute deck == Cards.shuffle(deck)
   end
 
 end
